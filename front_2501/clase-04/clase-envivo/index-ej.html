@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 04</title>
+</head>
+<style>
+    p {
+        color:blueviolet       ;
+        background-color: rgb(235, 185, 185); 
+    }
+
+    #special {
+        color: #ffff;
+        background-color: aquamarine;
+
+    }
+    .principal{
+        color: aqua;
+        background-color: bisque;
+    }
+</style>
+
+<body>
+
+    <!-- Encabezado principal del sitio -->
+    <header>
+        <h1>Mi Blog de Desarrollo Web</h1>
+
+        <!-- Menú de navegación principal -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#articulos">Artículos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal del documento -->
+    <main>
+
+        <!-- Sección de artículos -->
+        <section id="articulos">
+
+            <!-- Un artículo individual -->
+            <article>
+
+                <!-- Encabezado del artículo -->
+                <header>
+                    <h2>¿Qué es HTML Semántico?</h2>
+                </header>
+
+                <!-- Párrafo con etiquetas semánticas resaltadas -->
+                <p>
+                    El uso de etiquetas como <strong>&lt;section&gt;</strong> y
+                    <em>&lt;article&gt;</em> mejora la accesibilidad y el SEO.
+                </p>
+                <p id="special">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque minima a voluptatibus quam, ab, amet ex laboriosam odio, accusamus facere dolorum odit?</p>
+                <p class="principal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur harum eum incidunt, eligendi expedita enim soluta dolor officia facilis amet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eius. Placeat?</p>
+
+                <!-- Cita larga con fuente -->
+                <blockquote cite="https://developer.mozilla.org">
+                    “El HTML semántico permite a los navegadores y usuarios comprender mejor el contenido de una
+                    página.”
+                </blockquote>
+                <cite>MDN Web Docs</cite>
+
+                <!-- Imagen con leyenda -->
+                <figure>
+                    <img src="assets/semantic_1.jpg" alt="Ejemplo de código HTML">
+                    <figcaption>Figura 1: Ejemplo de etiqueta semántica en acción</figcaption>
+                </figure>
+
+                <!-- Cita corta en línea -->
+                <p style="color: chartreuse; background-color: black;">
+                    Según los expertos, <q>las etiquetas semánticas son fundamentales para el desarrollo moderno</q>.
+                </p>
+
+                <!-- Pie del artículo -->
+                <footer>
+                    <p>Publicado el 1 de mayo de 2025</p>
+                </footer>
+            </article>
+        </section>
+
+        <!-- Sección de la clase 03 con imágenes comparativas -->
+        <section id="clase03">
+            <h1>Clase 03</h1>
+            <h3>HTML semántico</h3>
+
+            <!-- Varias imágenes agrupadas dentro de un solo figure -->
+            <figure>
+                <img src="assets/semantic_2.jpg" alt="Estructura de blog con HTML5" width="300" height="300" />
+                <img src="assets/semantic_3.png" alt="Comparación HTML semántico y no semántico" width="300"
+                    height="300" />
+                <figcaption>
+                    Estas imágenes ilustran cómo se estructura un sitio web usando etiquetas semánticas en HTML5,
+                    y comparan la búsqueda semántica vs no semántica.
+                </figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <!-- Contenido adicional no directamente relacionado con el main -->
+    <aside>
+        <h3>Contenido relacionado</h3>
+        <ul>
+            <li><a href="#">Accesibilidad web</a></li>
+            <li><a href="#">Buenas prácticas en HTML</a></li>
+        </ul>
+    </aside>
+
+    <!-- Pie de página del sitio -->
+    <footer>
+        <p>&copy; 2025 Mi Blog de Desarrollo Web</p>
+    </footer>
+</body>
+
+</html>

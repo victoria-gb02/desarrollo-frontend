@@ -1,0 +1,21 @@
+body{
+    color: rgb(209, 15, 15);
+    background-color: aqua;
+}
+
+h1 {
+    color:azure;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.xeneixe {
+    color: yellow;
+    background-color: blue;
+}
+
+#millo {
+    color: white;
+    background-color: red;
+}
