@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Carrera de desarrollo front end</h2>
+    <form id="formulario" action="/submit" method="post" enctype="multipart/form-data">
+        <label for="fullname">Nombre y Apellido</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Ej: Juan Perez">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="********"> 
+        <label for="email">Ingrese su email</label>
+        <input type="text" id="email" name="email" placeholder="ejemplo@correo.com">
+        <label for="date">Ingrese su fecha de nacimiento</label>    
+        <input type="date" name="date" id="date">
+        <label for="profile_photo">Sube tu foto de perfil</label>
+        <input type="file" id="profile_photo" name="profile_photo" >
+        <label for="website">Ingresa un enlace a tu sitio web</label>
+        <input type="urltext" name="website" id="website" placeholder="https://miweb.com">
+        <div class="button-group"> 
+            <button type="sumit">Enviar</button>
+        </div>    
+    </form>
+</body>
+</html>
