@@ -1,0 +1,28 @@
+* {
+    background-color: rgb(0, 0, 90);
+    color: blanchedalmond;
+}
+
+h1 {
+    font-size: 120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+}
+
+p {
+    font-size: 48px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+.profession_1 {
+    color: rgb(233, 183, 183);
+}
+
+.profession_2 {
+    color: rgb(212, 190, 233);
+}
+
+.profession_3 {
+    color: rgb(178, 178, 240);
+}
