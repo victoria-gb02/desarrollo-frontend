@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bandera-argentina {
+    width: 300px;
+    height: 210px;
+    position: relative;
+    background-color: aquamarine;
+}
+
+.franja-celeste {
+    width: 300px;
+    height: 70px;
+    background-color: #74ACDF;
+}
+
+.franja-blanca {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+}   
