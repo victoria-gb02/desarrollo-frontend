@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ONG - Educación en movimiento</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Educación en movimiento</h1>
+        <svg width="50" height="50" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="10" fill="#b9b571" />
+            <path d="M8 12l2 2 4-4" stroke="#fff" stroke-width="2" fill="none" />
+        </svg>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">Quiénes somos</a></li>
+                <li><a href="#initiatives">Iniciativas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Acerca de nosotros</h2>
+            <p>En Educación en Movimiento, creemos que el aprendizaje es la herramienta más poderosa para transformar vidas. Somos una organización sin fines de lucro dedicada a brindar acceso a la educación de calidad a comunidades vulnerables, impulsando el desarrollo personal y social a través de programas innovadores.</p>
+            <article>
+                <h3>Nuestra Misión</h3>
+                <p>En Educación en Movimiento, trabajamos para garantizar que la educación sea un derecho accesible para todos, sin importar su origen o circunstancias. Creemos que el aprendizaje es la clave para el desarrollo individual y colectivo, por lo que nos enfocamos en brindar herramientas, recursos y oportunidades que transformen vidas.</p>
+            </article>
+            <article>
+                <h3>Qué Hacemos</h3>
+                <p>Brindamos recursos didácticos organizados y accesibles, asegurando que cada estudiante tenga las herramientas necesarias para avanzar en su formación.</p>
+                <p>Ofrecemos espacios de aprendizaje flexibles para educadores, impulsando metodologías innovadoras y estrategias de enseñanza adaptativas.</p>
+                <p>Fomentamos el interés por el conocimiento y la creatividad acercando materiales literarios y culturales a diversas comunidades.</p>
+            </article>
+        </section>
+
+        <section id="initiatives">
+            <h2>Galería de Proyectos</h2>
+            <div class="card-container">
+                <article class="card">
+                    <img src="./assets/tarea.avif" alt="Tarea" height="220px"/>
+                    <h3>Educación accesible</h3>
+                    <p>Apoyamos a niños y niñas con recursos educativos.</p>
+                    <button>Conoce más</button>
+                </article>
+                <article class="card">
+                    <img src="./assets/formacióncontinua.avif" alt="Capacitación" height="220px" />
+                    <h3>Formación Continua</h3>
+                    <p>Brindamos capacitaciones flexibles.</p>
+                    <button>Conoce más</button>
+                </article>
+                <article class="card">
+                    <img src=".//assets/mundosdepapel.JPG" alt="Lectura" height="220px"/>
+                    <h3>Mundos de papel</h3>
+                    <p>Facilitamos libros y recursos literarios.</p>
+                    <button>Conoce más</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="#" method="post" novalidate>
+                <label for="name">Nombre *</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre" />
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com" />
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                <label for="how">¿Cómo nos conociste?</label>
+                <select id="how" name="how">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="redes">Redes sociales</option>
+                    <option value="amigo">Amigo/familiar</option>
+                    <option value="evento">Evento</option>
+                </select>
+
+                <label for="terms" class="checkbox-label">
+                    <input type="checkbox" id="terms" name="terms" required />
+                    Acepto los términos y condiciones *
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 ONG Educación en movimiento - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

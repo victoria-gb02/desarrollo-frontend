@@ -1,0 +1,215 @@
+/* 2. Estilos base y selectores */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #807f52;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: content-box;
+    background: #fdfdf1;
+}
+
+header {
+    background: #75cccf;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    flex-grow: 1;
+    margin: 0;
+    text-align: left;
+}
+
+nav ul {
+    list-style: inside;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: #c3dada;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+
+}
+
+.card-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ade8ff;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1 1 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.card button {
+    margin-top: auto;
+    background-color: #b9b571;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover,
+.card button:focus {
+    background-color: #79ddc7;
+}
+
+
+form {
+    background: rgb(237, 253, 255);
+    padding: 1rem;
+    border: 1px solid #b9b571;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 1rem auto;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #99dde2;
+    border-color: #59c9c9;
+}
+
+input:valid {
+    border-color: #4ca8af;
+}
+
+input:invalid {
+    border-color: #928f56;
+}
+
+::placeholder {
+    color: #aaa;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+button[type="submit"] {
+    margin-top: 1.5rem;
+    background-color: #b9b571;
+    border: none;
+    padding: 0.7rem;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #79ddc7;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+}
+
+input[type="text"] {
+    background-color: #f0f8ff;
+}
+
+.card-container article:nth-child(odd) {
+    background-color: #f9fff9;
+}
+
+.card-container article:nth-child(even) {
+    background-color: #ffffff;
+}
+
+
+.card button:hover + p {
+    color: #4ca8af;
+}
+
+* p {
+    margin: 0;
+}
+
+nav ul li a:focus {
+    text-decoration: underline;
+}
